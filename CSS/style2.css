@@ -1,0 +1,24 @@
+/*选择ul的第一个子元素*/
+ul li:first-child{
+    color: #ce1212;
+    font-size: 20px;
+}
+/*选择ul最后一个子元素*/
+ul li:last-child{
+    background: cyan;
+}
+/*选择所有p元素的父元素，根据顺序选择第二个p元素*/
+p:nth-child(2){
+    color: darkblue;
+    font-size: 15px;
+}
+/*选择所有p元素中的第一个p元素*/
+p:nth-of-type(1){
+    color: hotpink;
+    background: gainsboro;
+    font-family: 新宋体;
+}
+/*光标落在文字上后字体颜色变化*/
+p:hover{
+    color: black;
+}

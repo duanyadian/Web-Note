@@ -1,0 +1,31 @@
+/*后代选择器(空格)，所选body元素内的所有p元素都会变化*/
+body p{
+    color: #ce1212;
+    font-size: 0.2in;
+}
+/*子选择器(>)，所选属于body元素的子元素中所有p元素都会变化*/
+body>p{
+    background: blue;
+    font-family: 华文行楷;
+}
+/*相邻兄弟选择器(+)，仅指紧随其后的元素，*/
+.section+p{
+    color: fuchsia;
+    background: darkgrey;
+}
+#summary+strong{
+    font-size: larger;
+    color: cyan;
+    background: brown;
+}
+/*通用兄弟选择器(~)，匹配指定元素紧随其后的所有同级元素*/
+.section~p{
+    color: darkorange;
+    background: greenyellow;
+    font-size: 10px;
+}
+#summary~p{
+    color: #ff8882;
+    background: #ffe268;
+    font-family: 新宋体;
+}

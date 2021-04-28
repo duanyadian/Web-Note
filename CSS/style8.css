@@ -1,0 +1,24 @@
+div{
+    width: 1200px;
+    height: 700px;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 6px 6px 6px rgba(0,0,0,.6);
+    background: url("../resource/image/19.jpg") no-repeat center  bottom;
+    position: relative;
+}
+p{
+    width: 700px;
+    height: 200px;
+    color: #ce1212;
+    font-size: 80px;
+    font-family: "楷体", sans-serif;
+    line-height: 200px;
+    text-align: center;
+    background: white;
+    position: absolute;
+    left: 50%;
+    margin-left: -350px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
+}

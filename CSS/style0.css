@@ -1,0 +1,53 @@
+#style p,a{
+/*    字体颜色*/
+    color: white;
+/*    字体大小，常用单位有像素px，百分比%，em，也可以选择其它单位*/
+    font-size: 20px;
+/*    字体样式，默认正常(normal)，如：文字斜体(italic)*/
+    font-style: italic;
+/*    为文本设置字体样式，多个样式是防止文本不支持时选择备用字体样式*/
+    font-family: Arial,Consolas,'楷体','微软雅黑',serif;
+/*    字体粗细，默认正常(normal)，加粗bold，也可以使用数值表示加粗层度100~700，还有斜体之类的样式*/
+    font-weight: bold;
+/*    设置文字水平方向，有居中设置肯定也有靠左靠右left、right*/
+    text-align: center;
+/*    行高，通常取盒子宽度的一半，让文字上下居中*/
+    line-height: 25px;
+/*    font属性综合写法：包含五个单一属性，字号和行高用斜杠分开，且字号行高及样式必须位于最后按序书写*/
+/*    font: italic bold 20px/25px "宋体";*/
+/*    文本修饰，通常用于去除a标签默认的下划线，可以添加上中下划线，overline、line-through、underline*/
+    text-decoration: none;
+/*    盒子长宽设置，常用单位是像素px，百分比%，em，也可以选择其它单位*/
+    width: 300px;
+    height: 50px;
+    border-color: blue;
+    border-style: solid;
+    border-width: 5px;
+    /*盒子为蓝色实线，线5px宽*/
+    /*border: 5px blue solid;*/
+/*    背景色*/
+    background-color: red;
+/*    背景图，背景色和背景图同时设置时都会显示，只是图片会盖住背景色*/
+    background-image: url("../resource/image/16.jpg");
+/*    是否重复使用背景图进行渲染，默认重复，no-repeat表示不重复，repeat-x横向平铺，repeat-y纵向平铺*/
+    background-repeat: no-repeat;
+/*    背景定位，左中右(left/center/right)，上中下(top/center/bottom)，通常两个组合使用使用，也可以使用像素法或百分比表示法*/
+    background-position: center top;
+/*    设置背景图是否虽页面滚动，默认滚动(scroll)，fixed表示将图片固定到浏览器左上顶点，不随页面滚动而滚动*/
+    background-attachment: fixed;
+/*    background属性综合写法：包含1~5个属性值，空格隔开，不指定顺序*/
+/*    background: url("../resource/image/18.jpg") no-repeat left top fixed orange;*/
+}
+#float{
+/*    浮动属性是用于网页并排布局的，它可以脱离标准文档流，不受元素等级限制，既可以并排显示，又可以设置宽高，属性值left、right*/
+/*    float: right;*/
+}
+.display{
+/*    显示模式，对应元素的三种类型，块元素(block)、行内元素(inline)、行内块元素(inline-block)*/
+    display: block;
+}
+/*div{*/
+/*    width: 1000px;*/
+/*    height: 150px;*/
+/*    border: 8px solid blue;*/
+/*}*/

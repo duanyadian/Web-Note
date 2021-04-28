@@ -1,0 +1,137 @@
+.bnr{
+    width: 1200px;
+    height: 650px;
+    border: 1px dotted silver;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px rgba(0,0,0,.7);
+    position: relative;
+    overflow: hidden;
+}
+img{
+    display: inline-block;
+    width: 1200px;
+    height: 700px;
+    object-fit: cover;
+}
+.bnr ul li{
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.bnr ul li.banner{
+    display: block;
+}
+.btn a{
+    position: absolute;
+    color: #d8e3e7;
+    font-size: 50px;
+    font-family: Serif;
+    background-color: rgba(255,255,255,.2);
+    width: 35px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    text-decoration: none;
+    top: 50%;
+    margin-top: -35px;
+
+}
+.btn a.left{
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.btn a.right{
+    right: 0;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+#circle{
+    width: 190px;
+    height: 20px;
+    position: absolute;
+    float: left;
+    background: rgba(255,255,255,.4);
+    left: 50%;
+    bottom: 10px;
+    margin-left: -100px;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+#circle ol li{
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    float: left;
+    background: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    margin: 0 5px;
+    bottom: 15px;
+    position: relative;
+    right: 20px;
+    cursor: pointer;
+}
+#circle ol li#current{
+    background-color: gold;
+    color: white;
+}
+/*#cover{*/
+/*    width: 1200px;*/
+/*    height: 700px;*/
+/*    margin: 20px auto;*/
+/*    border-radius: 20px;*/
+/*    box-shadow: 6px 6px 6px rgba(0,0,0,.6);*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*}*/
+#cover.cover {
+    width: 700px;
+    height: 200px;
+    color: #ce1212;
+    font-size: 80px;
+    font-family: "楷体", sans-serif;
+    line-height: 200px;
+    text-align: center;
+    background: white;
+    position: absolute;
+    left: 50%;
+    margin-left: -350px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.box{
+    width: 630px;
+    height: 20px;
+    position: absolute;
+    top: 70px;
+}
+
+ul li a.navigation{
+    width: 100px;
+    line-height: 40px;
+    float: left;
+    background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+    text-align: center;
+    border: 1px dotted red;
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    border-radius: 5px;
+}
+.navigation{
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "宋体";
+}
+a.navigation:hover{
+    display: block;
+    border-top: 2px solid #ce1212;
+    position: relative;
+    bottom: 4px;
+}

@@ -1,0 +1,45 @@
+.test a{
+    color: white;
+    display: block;
+    float: left;
+    width: 100px;
+    height: 100px;
+    /*边框圆角大小*/
+    border-radius: 20px;
+    /*去除文本下划线*/
+    text-decoration: none;
+    text-align: center;
+    /*设置字体加粗，字体大小及行高，楷体*/
+    font: bold 50px/100px '楷体';
+    margin-left: 20px;
+    background-image: url("../resource/image/11.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*选择存在id属性的元素*/
+a[id]{
+    background: cyan;
+}
+/*选择id="article"的元素*/
+a[id="article"]{
+    background: fuchsia;
+}
+/*选择class="name"的元素*/
+a[class="name"]{
+    background: orange;
+    color: black;
+}
+/*选择class中含有title的元素*/
+a[class*="title"]{
+    background: blue;
+}
+/*选择href中以http开头的元素*/
+a[href^="http"]{
+    background: darkorchid;
+}
+/*选择href中以html结尾的元素*/
+a[href$="html"]{
+    background: hotpink;
+}

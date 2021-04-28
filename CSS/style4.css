@@ -1,0 +1,55 @@
+/*在浏览器中通过通过F12查看盒子模型图*/
+div {
+    /*若盒子不设置宽度则默认撑满父盒子的宽度*/
+    width: 200px;
+    /*若盒子不设置高度则高度会跟随内容多少变更*/
+    height: 100px;
+    /*内边距指宽高到边框的间距，不能加载内容，但可以设置背景*/
+    padding: 20px;
+    border: 5px dashed #ce1212;
+    margin: 30px;
+}
+.test0{
+    width: 100px;
+    /*内边距(padding)是一个综合属性，可以根据四个方向设置单一属性*/
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+    background-color: hotpink;
+}
+.test1{
+    width: 50px;
+    height: 100px;
+    /*内边距(padding)使用综合属性写法，四个方向都设置时分别是上、右、下、左*/
+    padding: 50px 60px 70px 80px;
+}
+.test2{
+    width: 100px;
+    height: 120px;
+    /*内边距(padding)三值表示时分别是上、左右、下*/
+    padding: 10px 5px 15px;
+}
+.test3{
+    width: 100px;
+    height: 120px;
+    /*内边距(padding)二值表示时分别是上下、左右*/
+    padding: 16px 18px;
+}
+#test{
+    width: 80px;
+    height: 100px;
+    background-color: cyan;
+    /*四条边的颜色，同padding一样有四值表示法*/
+    border-color: red blue pink orange;
+    /*四条边的边框宽度，同padding一样有四值表示法*/
+    border-width: 10px 20px 30px 40px;
+    /*边框样式，dashed指虚线，solid指实线，double指双线，dotted指点线，同padding一样有四值表示法*/
+    border-style: dashed solid double dotted;
+}
+#test0{
+    width: 200px;
+    border: 5px dotted #ffe268;
+    margin: 30px 40px;
+}
+

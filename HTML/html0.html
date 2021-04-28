@@ -1,0 +1,191 @@
+<!--这是注释写法，快捷键是Ctrl+/-->
+<!--!DOCTYPE是声明,告诉浏览器要使用的规范-->
+<!DOCTYPE html>
+
+<!--html标签是告诉浏览器整个网页是从<html>这里开始的,到</html>结束-->
+<html lang="en">
+<!--head标签表示网页头部信息-->
+<head>
+<!--  meta描述性标签,用来简要描述网站的一些信息,通常用来做SEO,即搜索引擎优化-->
+    <meta charset="UTF-8">
+    <meta name="keyword" content="小白典的博客">
+    <meta about="summary" content="这里是小白典的博客,欢迎您的到访!">
+
+<!--    title标签表示网页标题信息-->
+    <title>小白典</title>
+</head>
+
+<!--body标签表示网页主体,大部分网页内容都写在body内-->
+<body>
+您好!
+<!--h1~h6标签表示HTML六个级别的标题-->
+<h1>一级标题</h1>
+<h2>二级标题</h2>
+<h3>三级标题</h3>
+<h4>四级标题</h4>
+<h5>五级标题</h5>
+<h6>六级标题</h6>
+
+<!--div标签是块级元素，通常和CSS一起使用-->
+<div>
+    <!--p标签表示段落-->
+    <p>对于某些事我们不在流泪了，是我们无情了还是坚强了？</p>
+    <!--span通常与行内元素组合使用并添加样式，若没有样式，则视觉上与其他文本不会有任何差异-->
+    <p>在有能力，有时间在一起的时候，一定要好好珍惜，<span style="color:blue">爱情</span>也好，友情也罢!</p>
+</div>
+
+
+<!--hr是水平线,是单标签,没有结束标签-->
+<hr>
+
+<!--br是换行符,也是单标签,没有结束标签-->
+微笑是改善容貌的简单方式。<br>
+
+<!--em标签表示字体为斜体-->
+<em>宁愿一个人呆着，也不愿跟不合拍的人呆一块!</em>
+<br>
+
+<!--strong标签表示字体加粗-->
+<strong> 念往昔，繁华竞逐!</strong>
+<hr>
+
+<!--&nbsp表示空格,一个&nbsp表示一个空格-->
+空&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格
+<br>
+&gt; 这是大于号
+<br>
+&lt; 这是小于号
+<br>
+&equals; 这是等号
+<br>
+&copy; 版权符号
+<br>
+&sdot;&sdot;&sdot;&sdot;&sdot;&sdot; 这是实心点
+<br>
+更多特殊符号请自行百度,或者根据工具提示选择需要的符号
+<hr>
+
+<!--img标签，src是图片地址，分为相对路径和绝对路径，更推荐使用相对路径-->
+<img src="../resource/image/8.jpg" alt="若图片获取失败则显示这些文字" title="光标落在图片上则显示这些文字" width="100" height="100">
+<br>
+<!--a标签是超链接，href指路径，target指链接打开位置，默认是当前页面，_blank表示在新窗口打开链接-->
+<a href="https://www.baidu.com/" target="_blank">百度</a><br>
+<a href="html0.html">点击跳转到html0网页</a><br>
+<!--图像链接-->
+<a href="html0.html">
+    <img src="../resource/image/6.jpg" alt="图片获取失败" title="一个人说话" width="100" height="100">
+</a><br>
+<!--锚链接，实现当前页面跳转，也可以实现页面间的跳转；1。先设置一个锚标记 2.点击链接跳转到标记处，页面超出屏幕才能显示出效果-->
+<!--当前页面跳转，使用name做为标记-->
+<a name="top">页面顶部</a>
+中间内容要足够多，出现滚动效果才能显示效果
+<a href="#top">回到顶部</a>
+<!--页面间跳转-->
+<!--在html0页面使用name做标记-->
+<a name="bottom">页面底部</a>
+<!--在其它页面设置跳转链接-->
+<a href="HTML/html0.html#bottom">跳转到html0页面底部</a>
+<!--功能性链接-->
+<!--邮箱链接，点击会调出邮箱客户端-->
+<a href="mailto:785288076@qq.com">发邮件给我</a>
+<!--QQ推广的链接，有些网页右侧的QQ联系就是这种方式写的-->
+<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=785288076&site=qq&menu=yes">
+    <img border="0" src="http://wpa.qq.com/pa?p=2:785288076:53" alt="点击此处QQ联系我" title="点击此处QQ联系我"/></a>
+
+
+<!--iframe内联框架，在当前网页打开另一个网页-->
+<iframe src="https://www.baidu.com/" frameborder="0" name="baidu" width="800" height="500"></iframe>
+<!--使用内联框架打开我的博客，target使用内联框架的name，也就是自定义了链接打开位置-->
+<a href="https://blog.csdn.net/Q0717168" target="baidu">点击跳转</a>
+
+<!--有序列表-->
+<ol>
+    <li>Java</li>
+    <li>Python</li>
+    <li>C</li>
+</ol>
+<!--无序列表-->
+<ul>
+    <li>Java</li>
+    <li>Python</li>
+    <li>C</li>
+</ul>
+<!--自定义列表-->
+<dl>
+    <dt>编程语言</dt>
+    <dd>Java</dd>
+    <dd>Python</dd>
+    <dd>C++</dd>
+</dl>
+
+<!--table表格标签，tr表示行，td表示列-->
+<table border="3">
+    <tr>
+<!--        colspan表示跨列，align表示对齐方式，左中右lift、center、right-->
+        <td colspan="3" align="center">语言</td>
+    </tr>
+    <tr>
+<!--        rowspan表示跨行-->
+        <td rowspan="2">测试</td>
+        <td>Java</td>
+        <td>Python</td>
+    </tr>
+    <tr>
+        <td>Go</td>
+        <td>Php</td>
+    </tr>
+</table>
+<!--视频标签-->
+<video src="../resource/video/油菜花.mp4" controls autoplay height="200" width="300"></video>
+<!--音频标签-->
+<audio src="../resource/audio/I_lomo_you.mp3" controls ></audio>
+<br>
+<!--表单-->
+<!--action表单提交位置，可以是网站也可以是请求处理地址，method是提交方式-->
+<form action="http://www.tianqiapi.com/user/index" method="post">
+<!--    文本输入框，value是添加默认值，
+        readonly表示只读，设置后该选框无法更改，hidden表示隐藏，disabled表示禁用-->
+    <p>登录账号：<input type="text" name="username" value="guest" readonly></p>
+<!--    密码输入框，placeholder是提示性信息-->
+    <p>登录密码：<input type="password" name="passwd" placeholder="请输入密码"></p>
+    <p>性别：
+<!--        radio是单选类型，name一样表示为相同组的，checked表示默认选择项-->
+        <input type="radio" name="Sex" value="boy" checked>男
+        <input type="radio" name="Sex" value="girl">女
+    </p>
+    <p>爱好：
+<!--        checkbox是多选类型-->
+        <input type="checkbox" name="hobby" value="swim">游泳
+        <input type="checkbox" name="hobby" value="travel" checked>旅行
+        <input type="checkbox" name="hobby" value="run">跑步
+    </p>
+    <p>
+<!--        select是下拉框，selected表示默认选项-->
+        <select name="cars">
+            <option value="LX">理想</option>
+            <option value="XP">小鹏</option>
+            <option value="WL" selected>蔚来</option>
+            <option value="XM">小米</option>
+        </select>
+    </p>
+    <p>
+<!--        textarea是文本域，required是非空判断，还有pattern是使用正在表达式判断，可以在所有文本框中使用-->
+        <textarea name="textarea" cols="30" rows="10" placeholder="请输入内容" required></textarea>
+    </p>
+    <p>
+<!--        file是文件域-->
+        <input type="file" name="file">
+        <input type="button" name="upload" value="上传">
+    </p>
+    <p>
+<!--    button是普通按钮，submit是提交按钮，reset是重置按钮-->
+        <input type="button" name="btn" value="登录">
+        <input type="submit" >
+        <input type="" value="clean">
+    </p>
+<!--    type有很多不同，除了以上列出的，还有search、url、email、date、range等请自行联系-->
+</form>
+
+
+</body>
+</html>

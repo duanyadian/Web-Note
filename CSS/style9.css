@@ -1,0 +1,104 @@
+/*Banner轮播图*/
+.bnr{
+    width: 1200px;
+    height: 650px;
+    border: 1px dotted silver;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 8px 8px 5px rgba(0,0,0,.6);
+    position: relative;
+    overflow: hidden;
+}
+img{
+    display: inline-block;
+    width: 1200px;
+    height: 700px;
+    /*object-fit是指定元素内容适应方式，cover表示保持原有尺寸比例，但部分内容可能被剪切！*/
+    object-fit: cover;
+}
+.bnr ul li{
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.bnr ul li.banner{
+    display: block;
+}
+.btn a{
+    position: absolute;
+    color: #d8e3e7;
+    font-size: 50px;
+    font-family: Serif;
+    background-color: rgba(255,255,255,.3);
+    width: 35px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    text-decoration: none;
+    top: 50%;
+    margin-top: -35px;
+
+}
+.btn a.left{
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.btn a.right{
+    right: 0;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+/*添加banner轮播序号*/
+#circle{
+    width: 190px;
+    height: 20px;
+    position: absolute;
+    float: left;
+    background: rgba(255,255,255,.4);
+    left: 50%;
+    bottom: 10px;
+    margin-left: -100px;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+#circle ol li{
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    float: left;
+    background: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    margin: 0 5px;
+    bottom: 15px;
+    position: relative;
+    right: 20px;
+    cursor: pointer;
+}
+/*banner选中后的序号变化*/
+#circle ol li#current{
+    background-color: gold;
+    color: white;
+}
+/*文章注解*/
+.test{
+    width: 650px;
+    height: auto;
+    position: relative;
+    left: 50%;
+    margin-left: -325px;
+}
+p{
+    font: bold 15px/30px "微软雅黑";
+}
+span{
+    font-size: 7px;
+    color: blue;
+    font-family: Arial, Consolas, '楷体', '微软雅黑', serif;
+    position: relative;
+    bottom: 6px;
+    cursor: pointer;
+}

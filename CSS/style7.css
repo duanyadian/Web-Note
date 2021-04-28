@@ -1,0 +1,60 @@
+/*压盖*/
+#cover{
+    width: 1200px;
+    height: 700px;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 6px 6px 6px rgba(0,0,0,.6);
+    background: url("../resource/image/19.jpg") no-repeat center  bottom;
+    position: relative;
+}
+
+.cover{
+    width: 700px;
+    height: 200px;
+    color: #ce1212;
+    font-size: 80px;
+    font-family: "楷体", sans-serif;
+    line-height: 200px;
+    text-align: center;
+    background: white;
+    position: absolute;
+    left: 50%;
+    margin-left: -350px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
+}
+/*导航菜单*/
+.box{
+    width: 630px;
+    height: 20px;
+    position: absolute;
+    top: 70px;
+}
+
+li{
+    width: 100px;
+    line-height: 40px;
+    float: left;
+    background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+    text-align: center;
+    border: 1px dotted red;
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    border-radius: 5px;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "宋体";
+}
+a:hover{
+    display: block;
+    border-top: 2px solid #ce1212;
+    position: relative;
+    bottom: 4px;
+}
+

@@ -1,0 +1,39 @@
+/*标签选择器会选择页面上所有的标签元素*/
+h1{
+    color: blueviolet;
+}
+h2{
+    color: blueviolet;
+    background: darkgrey;
+    font-size: 20px;
+}
+/*p{*/
+/*    color: blue;*/
+/*    font-family: 华文行楷;*/
+/*}*/
+h3,em{
+    color: aqua;
+    height: 10px;
+}
+/*类选择器，可以多个标签归类*/
+.test{
+    color: #ff8882;
+    font-style: normal;
+}
+.label,.title{
+    color: #ce1212;
+    font-size: small;
+}
+/*id选择器，id不可重复，必须保证全局唯一*/
+#name{
+    color: #ffe268;
+    font-weight: normal;
+}
+#title{
+    font-family: '楷体';
+    color: cyan;
+}
+#nickname{
+    font-size: 2em;
+    color: darkgoldenrod;
+}

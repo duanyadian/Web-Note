@@ -1,0 +1,44 @@
+
+/**{*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*}*/
+#box0{
+    width: 350px;
+    height: 350px;
+    border: #2BD2FF dotted 5px;
+    margin: auto;
+    position: relative;
+    left: 100px;
+    top: 100px;
+}
+#box1{
+    width: 250px;
+    height: 250px;
+    border: 5px dashed blue;
+    margin: auto;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+#box2{
+    width: 150px;
+    height: 150px;
+
+    border: 5px solid orange;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+.block{
+    width: 120px;
+    height: 60px;
+    background-image: url("../resource/image/17.jpg");
+    background-size: 150px;
+    background-position: center;
+    border-radius: 15px;
+    cursor: pointer;
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+}
